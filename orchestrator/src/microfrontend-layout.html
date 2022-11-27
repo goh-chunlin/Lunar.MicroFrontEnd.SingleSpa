@@ -1,0 +1,35 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+  <main>
+    <route default>
+      <application name="@Lunar/design"></application>
+
+      <div style="display: grid; column-gap: 50px; grid-template-columns: 30% auto; background-color: #2196F3; padding: 10px;">
+        <div style="background-color: rgba(255, 255, 255, 0.8); padding: 20px;">
+          <application name="@Lunar/app1"></application>
+        </div>
+        <div style="background-color: rgba(255, 255, 255, 0.8); padding: 20px;">
+          <application name="@Lunar/app2"></application>
+        </div>
+      </div>
+      
+    </route>
+  </main>
+</single-spa-router>
